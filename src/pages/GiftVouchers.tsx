@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const GiftVouchers = () => {
+  {/* URL for the gift voucher booking page */}
   const voucherUrl = "https://booksteam.com/Customer/BookNowGiftCertificates.aspx?k=8b140436531&";
 
   return (
