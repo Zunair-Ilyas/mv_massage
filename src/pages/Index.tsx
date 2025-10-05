@@ -6,11 +6,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BookingButton from "@/components/BookingButton";
 import heroVideo from "@/assets/background.mp4";
-import heroPoster from "@/assets/hero-massage.jpg";
+// import heroPoster from "@/assets/hero-massage.jpg";
 import massageTherapy from "@/assets/massage-therapy.jpg";
 import relaxationImg from "@/assets/relaxation.jpg";
 import thaiImg from "@/assets/thai.jpg";
 import deepTissueImg from "@/assets/deeptissue.jpg";
+import homeImg from "@/assets/home.jpg";
 
 const Index = () => {
   const services = [
@@ -97,11 +98,11 @@ const Index = () => {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[580px] flex items-center justify-center overflow-hidden">
           <video
             className="absolute inset-0 w-full h-full object-cover"
             src={heroVideo}
-            poster={heroPoster}
+            // poster={heroPoster}
             autoPlay
             loop
             muted
@@ -111,10 +112,26 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/70 to-foreground/40" />
 
           <div className="relative z-10 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Restore calm.<br />Book your healing hour.
-            </h1>
-            <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+            {/* Floating image centered with overlayed Welcome badge */}
+            <div className="flex justify-center mb-6">
+              <div className="relative inline-block">
+                <img
+                  src={homeImg}
+                  alt="Welcome to MV Massage"
+                  className="h-[120px] sm:h-[200px] md:h-[270px] lg:h-[320px] xl:h-[360px] w-auto max-w-full rounded-2xl shadow-xl ring-1 ring-white/20 object-cover animate-float"
+                  loading="eager"
+                  decoding="async"
+                />
+                <span
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 py-2 rounded-full bg-white/25 text-white text-base sm:text-lg tracking-wider uppercase backdrop-blur-sm font-semibold shadow"
+                >
+                  Welcome to MV Massage
+                </span>
+              </div>
+            </div>
+
+            {/* Tagline below image */}
+            <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
               Remedial Massage Therapists in Greerton, Tauranga
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
