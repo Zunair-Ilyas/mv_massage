@@ -1,8 +1,9 @@
-import { Gift, ExternalLink, Phone } from "lucide-react";
+import { Gift, ExternalLink, Phone, AlertTriangle } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 const GiftVouchers = () => {
   {/* URL for the gift voucher booking page */}
@@ -41,6 +42,15 @@ const GiftVouchers = () => {
                   Call into the clinic, or click below to order online and save gas and time!
                 </p>
               </div>
+
+              {/* Tip note */}
+              <Alert className="mt-6">
+                <AlertTriangle className="h-4 w-4" />
+                <AlertTitle>Tip</AlertTitle>
+                <AlertDescription>
+                  If ordering vouchers online, please <strong>don&apos;t choose “print myself”</strong> unless you have entered your email address first or you are already logged in to your account — otherwise the voucher can&apos;t be sent anywhere.
+                </AlertDescription>
+              </Alert>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Button asChild variant="coral" className="w-full sm:w-auto">
