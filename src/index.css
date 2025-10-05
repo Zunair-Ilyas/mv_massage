@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* MV Massage Design System - Warm, Calming, Professional */
+    
+    /* Core Brand Colors */
+    --background: 35 52% 93%; /* Warm Sand #F7EFE6 */
+    --foreground: 200 18% 19%; /* Dark Text #263238 */
+
+    --card: 0 0% 100%; /* White cards for contrast */
+    --card-foreground: 200 18% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 18% 19%;
+
+    --primary: 172 39% 65%; /* Soft Teal #7FC3B8 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 62%; /* Muted Gray #9E9E9E */
+    --secondary-foreground: 200 18% 19%;
+
+    --muted: 35 30% 88%; /* Lighter sand for subtle backgrounds */
+    --muted-foreground: 0 0% 62%;
+
+    --accent: 0 100% 70%; /* Coral Accent #FF6B6B */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 30% 85%;
+    --input: 35 30% 88%;
+    --ring: 172 39% 65%;
+
+    --radius: 0.75rem; /* 12px for cards */
+
+    /* Custom Design Tokens */
+    --teal-soft: 172 39% 65%;
+    --teal-hover: 172 39% 55%;
+    --coral: 0 100% 70%;
+    --coral-hover: 0 100% 65%;
+    --sand-warm: 35 52% 93%;
+    --sand-light: 35 30% 88%;
+    
+    /* Shadows */
+    --shadow-soft: 0 6px 18px rgba(38, 50, 56, 0.06);
+    --shadow-hover: 0 8px 24px rgba(38, 50, 56, 0.12);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+}
