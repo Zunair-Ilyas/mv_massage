@@ -134,48 +134,48 @@ const About = () => {
         </section>
 
         {/* Accreditations */}
-        <section className="py-16 sm:py-24">
-          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="font-heading text-3xl font-bold text-foreground mb-8">
-              Qualifications & Memberships
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="space-y-2">
-                <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-10 w-10 text-primary" />
-                </div>
-                <h3 className="font-heading font-semibold text-foreground">
-                  Massage New Zealand
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  All therapists are registered members
-                </p>
-              </div>
-              <div className="space-y-2">
-                <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-10 w-10 text-primary" />
-                </div>
-                <h3 className="font-heading font-semibold text-foreground">
-                  ACC Registered
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  We can help with ACC-funded treatments
-                </p>
-              </div>
-              <div className="space-y-2">
-                <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-10 w-10 text-primary" />
-                </div>
-                <h3 className="font-heading font-semibold text-foreground">
-                  Fully Insured
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Professional indemnity insurance coverage
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/*<section className="py-16 sm:py-24">*/}
+        {/*  <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">*/}
+        {/*    <h2 className="font-heading text-3xl font-bold text-foreground mb-8">*/}
+        {/*      Qualifications & Memberships*/}
+        {/*    </h2>*/}
+        {/*    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">*/}
+        {/*      <div className="space-y-2">*/}
+        {/*        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">*/}
+        {/*          <Award className="h-10 w-10 text-primary" />*/}
+        {/*        </div>*/}
+        {/*        <h3 className="font-heading font-semibold text-foreground">*/}
+        {/*          Massage New Zealand*/}
+        {/*        </h3>*/}
+        {/*        <p className="text-sm text-muted-foreground">*/}
+        {/*          All therapists are registered members*/}
+        {/*        </p>*/}
+        {/*      </div>*/}
+        {/*      <div className="space-y-2">*/}
+        {/*        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">*/}
+        {/*          <Award className="h-10 w-10 text-primary" />*/}
+        {/*        </div>*/}
+        {/*        <h3 className="font-heading font-semibold text-foreground">*/}
+        {/*          ACC Registered*/}
+        {/*        </h3>*/}
+        {/*        <p className="text-sm text-muted-foreground">*/}
+        {/*          We can help with ACC-funded treatments*/}
+        {/*        </p>*/}
+        {/*      </div>*/}
+        {/*      <div className="space-y-2">*/}
+        {/*        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">*/}
+        {/*          <Award className="h-10 w-10 text-primary" />*/}
+        {/*        </div>*/}
+        {/*        <h3 className="font-heading font-semibold text-foreground">*/}
+        {/*          Fully Insured*/}
+        {/*        </h3>*/}
+        {/*        <p className="text-sm text-muted-foreground">*/}
+        {/*          Professional indemnity insurance coverage*/}
+        {/*        </p>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
       </main>
 
       <Footer />
